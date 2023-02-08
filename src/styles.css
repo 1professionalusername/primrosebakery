@@ -1,0 +1,1590 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ------------------------------------------------------------END_OF_CSS_RESET------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap'); 
+
+
+/* -----------------------------------------------------------Beginning of Page Styling---------------------------------------------------------------- */
+  .homebody {
+  margin: 0 auto; 
+  height: 100%;
+}
+
+.gallerybody {
+  margin: 0 auto;
+  height: 100%;
+}
+/* @media screen and (max-width: 428px) {
+  .gallerybody {
+    
+  }
+} */
+/* ---------------------------------------------------------------Top Banner Image--------------------------------------------------------------------- */
+
+
+.piebanner_img{
+  background-image: url('/public/primrose_pie_banner.svg');
+  background-position: center;
+  max-width: 100%;
+  height: 44.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_img {
+    height: 35rem;
+  }
+}
+
+.home_icon_container_top {
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ border: none; 
+ position: absolute;
+ top: 5%;
+ left: 50%; 
+ transform: translate(-50%, -50%);
+ height:6rem;
+ background-color:rgba(85, 0, 82, .6);
+ border-radius: 0px 0px 25px 25px;
+}
+@media screen and (max-width: 428px) {
+  .home_icon_container_top {
+    height: 4rem;
+    top:2.89%;
+    margin-top: 3.5rem;
+    width: 15.75rem;
+  }
+}
+.support_icon_container_top {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  position: absolute;
+  top: 5%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  height:6rem;
+  background-color:rgba(85, 0, 82);
+  border-radius: 0px 0px 25px 25px;
+ }
+ @media screen and (max-width: 428px) {
+   .support_icon_container_top {
+     height: 4rem;
+     top:2.89%;
+     margin-top: 3.5rem;
+     width: 15.75rem;
+   }
+ }
+.primrose_icon {
+justify-content: center;
+align-items: center; 
+height: 6rem;
+width: 17rem;
+background-image: url("/public/primrose_main_logo.svg");
+background-repeat: no-repeat;
+background-position: center;
+}
+@media screen and (max-width: 428px) {
+  .primrose_icon {
+    height: 4rem;
+    transform: scale(0.8);
+  }
+}
+
+ .piebanner_text_and_button_container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+ } 
+ 
+.piebanner_text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 100;
+  padding-top: 12rem;
+  line-height: 79px;
+  letter-spacing: .1rem;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_text {
+   padding-top: 6rem;
+   font-size: 3rem;
+   line-height: 55px;
+   margin-top: 1rem;
+  }
+}
+
+
+.piebanner_order_button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  height: 3rem;
+  letter-spacing: 2px;
+  margin-top: 4rem;
+  padding-top: 25px;
+  text-align: center;
+  width: 15rem;
+  word-spacing: 2px;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_order_button {
+   margin-top: 2rem;
+   font-size: 18px;
+   height: 2.5rem;
+   width: 11rem;
+   padding-top: 21px;
+
+  }
+}
+
+/* ---------------------------------------------------------------------Nav---------------------------------------------------------------------------- */
+
+.homenav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 4rem;
+  background-color: #550052;
+  opacity: .75;
+  position: relative;
+}
+@media screen and (max-width: 428px) {
+  .homenav {
+    background-color: none;
+    height: 3rem;
+  }
+}
+.supportnav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 4rem;
+  background-color: #550052;
+  position: relative;
+}
+@media screen and (max-width: 428px) {
+  .supportnav {
+    background-color: none;
+    height: 3rem;
+  }
+}
+
+.homenav a {
+  font-family: bicyclette, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: .8rem;
+}
+.supportnav a {
+  font-family: bicyclette, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: .8rem;
+}
+
+.home{
+  margin-right: 5rem;
+}
+@media screen and (max-width: 428px) {
+  .home {
+    margin-right: 2rem;
+  }
+}
+.gallery{
+  margin-right: 14rem;
+}
+@media screen and (max-width: 428px) {
+  .gallery {
+    margin-right: 1rem;
+  }
+}
+
+.about{
+  margin-left: 14rem;
+}
+@media screen and (max-width: 428px) {
+  .about {
+   margin-left: 1rem;
+
+  }
+}
+
+.order{
+  margin-left: 5rem;
+}
+@media screen and (max-width: 428px) {
+  .order {
+   margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  nav h4 {
+    font-size: 4rem;
+  }
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------Triptych Container--------------------------------------------------------------------- */
+ .triptych_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8rem; 
+  background-color: #f5d4f4;
+  padding-bottom: 6.5rem;
+  height: auto;
+  
+}
+@media screen and (max-width: 428px) {
+   .triptych_container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem;
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    padding-bottom: 0rem;
+  }
+}
+
+ .triptych_cookies_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_cookies.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+ .triptych_cookies_img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+} 
+ .triptych_pastries_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_pastries.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+   .triptych_pastries_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+}
+ .triptych_cakes_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_cakes.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+  .triptych_cakes_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+}
+
+a .triptych_cookies_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+} 
+
+a .triptych_pastries_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+  
+} 
+
+ a .triptych_cakes_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+  
+} 
+ 
+/* ----------------------------------------------------------------Middletext-------------------------------------------------------------------------- */
+.middletext_content_container{
+  display: flex;
+  justify-content: center;
+  background-color: #f5d4f4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
+}
+@media screen and (max-width: 428px) {
+  .middletext_content_container{
+    flex-direction: column; 
+    padding-top: 0rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  
+  }
+} 
+
+.middletext_left_container{
+  padding-top: 2rem;
+  margin-right: 6rem;
+
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_container{
+   margin-right: 0rem;
+   margin-top: 2rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+  }
+} 
+
+.middletext_left_purple{
+  font-size: 7rem;
+  line-height: 150px;
+  color:#550052;
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_purple{
+    line-height: 80px;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: .5rem;
+  }
+} 
+
+.middletext_left_pink{
+  font-size: 7rem;
+  line-height: 120px;
+  color:#C00170;
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_pink{
+   line-height: 80px;
+   font-size: 3.5rem;
+   margin-bottom: 1.8rem;
+   text-align: center;
+  }
+} 
+
+.middletext_vertical_bar {
+  border: 2px solid #550052;
+  height: 500px;
+}
+@media screen and (max-width: 428px) {
+  .middletext_vertical_bar{
+   height: 0rem;
+  }
+} 
+.middletext_right_container{
+  padding-top: 2rem;
+  margin-right: 5rem;
+}
+@media screen and (max-width: 428px) {
+.middletext_right_container{
+  padding-top: 0rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+  
+}
+}
+.middletext_right{
+  width: 33rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 47px;
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .middletext_right{
+    margin-top: 4rem;
+    margin-left: 0rem;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width: 428px) {
+  .middletext_rb_container{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.middletext_right_button{
+  color: black;
+  border: 2px solid #550052;
+  height: 3rem;
+  width: 15rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+  padding-top: 1.6rem;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  line-height: 23px;
+  word-spacing: 3px;
+
+}
+@media screen and (max-width: 428px) {
+  .middletext_right_button{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 18px;
+    height: 2.5rem;
+    width: 11rem;
+    margin-top: 2rem;
+    padding-top: 21px;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+  }
+} 
+/* -----------------------------------------------------------------Bottom Bannner Home--------------------------------------------------------------------- */
+
+
+ 
+.doughnut_banner_img{
+  background-image: url('/public/primrose_doughnut_banner.svg');
+  background-position: center;
+  height: 37rem;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doughnut_banner_text_and_button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.doughnut_banner_text{
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 100;
+  text-align: center;
+  font-family: Lora;
+  letter-spacing: 2px;
+  margin-top: 10rem;
+  line-height: 79px;
+  width: 45rem;
+}
+@media screen and (max-width: 428px) {
+  .doughnut_banner_text{
+    font-size: 3.3rem;
+    margin-top: 8rem;
+    width: 24rem;
+    line-height: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+} 
+.doughnut_order_button {
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  height: 2.8rem;
+  width: 14rem;
+  margin-top: 5rem;
+  padding-top: 1.6rem;
+}
+@media screen and (max-width: 428px) {
+  .doughnut_order_button{
+    width: 12rem;
+    padding-top: 1.2rem;
+    font-size: 18px;
+    height: 2.3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+} 
+/* ---------------------------------------------------------------Footer------------------------------------------------------------------------------- */
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  height: 15rem;
+  max-width: 100%;
+  background-color: #550052;
+
+}
+@media screen and (max-width: 428px) {
+  .footer_container{
+   flex-direction: column;
+   height: 20rem;
+  }
+} 
+
+.lower_left_footer_container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.primrose_icon_container_bottom {
+  display: flex;
+  height: 6.4375rem;
+  width: 19.375rem;
+  border: 2px solid #ffffff;
+  background-color: #550052;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-image: url("/public/primrose_main_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer_left_text_container{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+  margin-right: 4.5rem;
+}
+@media screen and (max-width: 428px) {
+  .footer_left_text_container{
+    margin-right: 1rem;
+    margin-left: 0rem;
+  }
+} 
+
+.footer_vertical_line{
+  display: flex;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+  padding-left: 2rem;
+}
+
+.footer_nav{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-family: bicyclette, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;  
+}
+@media screen and (max-width: 428px) {
+  .footer_nav{
+    display: none;
+  }
+}
+
+.footer_home {
+  margin-right: 3rem;
+}
+.footer_gallery{
+  margin-right: 1.5rem;
+}
+.footer_about{
+  margin-left: 1.5rem;
+}
+.footer_order{
+  margin-left: 3rem;
+}
+.footer_right_text_and_instagram{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: .5rem;
+  margin-right: 2rem;
+}
+
+.footer_right_text{
+  color: #F5D4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 2.3rem;
+  font-family: 'Lora';
+}
+@media screen and (max-width: 428px) {
+  .footer_right_text{
+    display: none;
+  }
+} 
+.instagram_icon{
+  font-size: 3rem;
+  color: white; 
+}
+@media screen and (max-width: 428px) {
+  .instagram_icon{
+   padding-left: .8rem;
+  }
+} 
+  
+.gallery-page-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+  margin-bottom: 8.7rem;
+}
+@media screen and (max-width: 428px) {
+  .gallery-page-wrapper{
+  /* margin-top: 9rem; */
+  margin-bottom: 6.3rem;
+  }
+} 
+.column1 {
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .column1{
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+} 
+.column1 .box1{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box3{
+  background-image: url("/public/primrose_doughnuts.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box4{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ 
+.column2 {
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .column2{
+   margin-left: .5rem; 
+   margin-right: .5rem;
+  }
+} 
+.column2 .box1{
+  background-image: url("/public/primrose_enjoy2.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ 
+ .column2 .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column2 .box3{
+  background-image: url("/public/primrose_doughnuts.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column2 .box4{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+.column3 {
+  margin-left: 1rem;
+ margin-right: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .column3{
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+} 
+.column3 .box1{
+  background-image: url("/public/primrose_beignet.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column3 .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column3 .box3{
+  
+  background-image: url("/public/primrose_doughnuts.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column3 .box4{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+.column4{ 
+ margin-left: 1rem;
+ margin-right: 1rem;
+ 
+}
+@media screen and (max-width: 428px) {
+  .column4{
+  display: none;
+  }
+} 
+.column4 .box1{
+  background-image: url("/public/primrose_cake_cropped.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column4 .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column4 .box3{
+  background-image: url("/public/primrose_doughnuts.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column4 .box4{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+.box1 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #550052;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 428px) {
+  .box1{
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+} 
+.box2 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #C00170;
+  border: 2px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .box2{
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1rem;
+   margin-bottom: 1rem;
+  }
+} 
+.box3 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #F5D4F4;
+  border: 2px solid black;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 428px) {
+  .box3{
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+} 
+.box4 {
+  display: none;
+}
+@media screen and (max-width: 428px) {
+  .box4{
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;    
+  }
+} 
+.slimfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  height: 3.8rem;
+  background-color: #550052;
+  padding-top: .2rem; 
+  margin-bottom: 0rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 428px) {
+  .slimfooter{
+   height: 4rem;
+   font-size: 3rem;
+  }
+} 
+.about_page_wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6.2rem;
+  margin-bottom: 6.2rem;
+}
+@media screen and (max-width: 428px) {
+.about_page_wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2.3rem;
+}
+}
+.about_text {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 25rem;
+}
+@media screen and (max-width: 428px) {
+.about_text {
+  width: auto;
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+}
+.aboutp1{
+  padding-bottom: .7rem;
+}
+@media screen and (max-width: 428px) {
+  .aboutp1 {
+    padding-bottom: 0rem;
+  }
+  
+}
+.aboutp2{
+  padding-top: .7rem;
+}
+@media screen and (max-width: 428px) {
+  .aboutp2 {
+    padding-top: 0rem;
+  }
+  
+}
+.about_image {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;
+  color: black;
+  height: 18rem; 
+  width: 25rem;
+  background-image: url("/public/about_placeholder3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  border: 2px solid black;
+  }
+@media screen and (max-width: 428px) {
+  .about_image {
+   display: flex;
+   justify-content: center; 
+   align-items: flex-end;
+   color: black;
+   height: 15rem;
+   width: 18rem;
+   background-image: url("/public/about_placeholder3.png");
+   background-position: center;
+   margin-top: 1rem;
+   border: 2px solid black;
+   }
+}
+.hey{
+  font-size: 1.3rem;
+  transform: rotate(-10deg);
+  padding-bottom: 1.8rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media screen and (max-width: 428px) {
+  .hey{
+    font-size: 1.3rem;
+    transform: rotate(-10deg);
+    padding-bottom: 1.8rem;
+    font-family: 'Work Sans', sans-serif;
+  }
+}
+.damali{
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 428px) {
+  .damali{
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+/* @media screen and (max-width: 428px) {
+  .orderheadertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .cardbody{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 95%;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: .2rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+  }
+} */
+/* @media screen and (max-width: 428px) {
+  .cardimage{
+    justify-content: right;
+    border: 1px solid black;
+    height: 7rem;
+    width: 8rem;
+    background-image: url("/public/kawaii-cupcake-64.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: .5rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .cardtext{
+    font-family: bicyclette, sans-serif;
+    margin-left: 1rem;
+  }
+} */
+/* @media screen and (max-width: 428px) {
+  .cardheader{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+} */
+/* @media screen and (max-width: 428px) {
+  .cardcopy{
+   
+  }
+} */
+/* @media screen and (max-width: 428px) {
+  .cardbutton{
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+   font-size: 18px;
+   height: 1.5rem;
+   width: 8rem;
+   padding-top: 6px;
+   margin-bottom: 1rem;
+   letter-spacing: 2px;
+  word-spacing: 3px;
+  text-align: center;
+  border: 2px solid black;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .orderseasonaltext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+} */
+ /* @media screen and (max-width: 428px) {
+  .modalBtn {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 12px 24px;
+    background-color: gray;
+   cursor: pointer;
+  }
+}
+@media screen and (max-width: 428px) {
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+} */
+
+/* @media screen and (max-width: 428px) {
+.modalContainer{
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px, 0px, 18px, 0px rgba(0, 0, 0, 0.75);
+  background-position: center;
+   
+}  
+}
+*/
+
+/* @media screen and (max-width: 428px) {
+img {
+  width: 250px;
+  object-fit: cover;
+}
+}
+@media screen and (max-width: 428px) {
+.modalRight {
+  width: 100%;
+
+}
+} */
+/* @media screen and (max-width: 428px) {
+.closeBtn {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+}
+@media screen and (max-width: 428px) {
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+} */
+
+
+
+
+/* .modalDiv {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 12px 24px;
+  width: 2rem;
+  height: 2rem;
+  background-color: gray;
+  cursor: pointer;
+} */
+/* --------------------------------------------ORDER PAGE---------------------------------------------------- */
+
+@media screen and (max-width: 428px) {
+.orderPageContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  margin-left: .25rem; 
+}
+.orderPageWrapper{
+  padding-top: 5rem;
+
+}
+.orderHere {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: bicyclette, sans-serif;
+}
+.orderPopular {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+.cupcakes {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.pastries {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+/* ------------------------CARD------------------------------ */
+.cardbody {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  width: auto;
+  background-color: white;
+  border: 2px solid black;
+  margin: 0.3rem 0.5rem;
+  /* cursor: pointer; */
+}
+.cardtext {
+  font-family: bicyclette, sans-serif;
+  margin: 0.5rem;
+}
+.cardcopy {
+  margin-bottom: 2rem;
+}
+
+.cardImage {
+  width: 100%;
+  max-height: 15rem;
+  object-fit: contain;
+  padding-top: 1rem;
+  margin-left: 0rem;
+}
+.cardImage {
+  justify-content: right;
+  height: 7rem;
+  width: 7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardheader {
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-style: bold;
+}
+
+.cardbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 18px;
+  height: 1.5rem;
+  width: 8rem;
+  padding-top: 6px;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-align: center;
+  border: 2px solid black;
+}
+/* ---------------------------------FORM-------------------------------- */
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: .5rem;
+}
+.nameLabel{
+  align-self: baseline;
+  margin-left: 2rem;
+}
+.nameInput{
+  width: 80%;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+.emailLabel{
+  align-self: baseline;
+  margin-left: 2rem;
+}
+.emailInput{
+  width: 80%;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+ .messageLabel1{
+  align-self: baseline;
+  margin-left: 2rem;
+ } 
+.messageInput1{
+  width: 80%;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1rem;
+}
+.messageLabel2{
+  align-self: baseline;
+  margin-left: 2rem;
+ } 
+.messageInput2{
+  width: 80%;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.orderSubmitButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderSubmitButton{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: bicyclette, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  height: 3rem;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  text-align: center;
+  width: 11rem;
+  word-spacing: 2px;
+  cursor: pointer;
+  
+}
+
+
+
+/* ----------------------------Modal------------------------- */
+/* 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+}
+
+.modalContainer {
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  height: 102vh;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+
+.modalTitle {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.modalCopy {
+  font-size: 1.3rem;
+  padding-bottom: .5rem;
+  margin: 1.5rem;
+  
+}
+
+.modalImg {
+  
+  width: 350px;
+  margin-left: .8rem;
+  margin-top: 1.4rem;
+  object-fit: contain;
+  /* border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; 
+  
+}
+
+.modalRight {
+  width: 100%;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 8px;
+  right: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.btnContainer button {
+  width: 7rem;
+  margin: 0.5rem;
+  padding: 13px 0;
+  border: 1px solid #411b57;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: #411b57;
+  color: white;
+}
+
+.btnOutline {
+  
+  background-color: white;
+  color: #411b57;
+} 
+*/
+}
