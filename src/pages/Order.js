@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useForm } from "react-hook-form";
 import SupportNav from "../components/SupportNav";
 import SlimFooter from "../components/SlimFooter";
 import SupportIcon from "../components/SupportIcon";
@@ -9,6 +10,14 @@ import CupcakeCard from "../components/CupcakeCard";
 
 export const Order = () => {
   const form = useRef();
+  const {register,
+        formState: {errors},
+      } = useForm({
+        mode: "all",
+      })
+
+  
+  console.log(errors);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,8 +34,8 @@ export const Order = () => {
           console.log("message sent");
           e.target.reset();
         },
-        (error) => {
-          console.log(error.text);
+        (errors) => {
+          console.log(errors.text);
         }
       );
   };
@@ -42,9 +51,26 @@ export const Order = () => {
         <CupcakeCard />
       <form className='form'ref={form} onSubmit={sendEmail}>
         <label className="nameLabel">Name:</label>
-        <input className='nameInput'type="text" name="user_name" required/>
+        <input {...register("userName",{
+          required: "Name is required",
+          minLength: {
+            value: 3,
+            message: "Name must be at least 3 characters long",
+          },
+        })
+      }
+      className='nameInput' type="text" name="user_name" placeholder="Name"/>
+      {errors.userName?.message}
+
         <label className="emailLabel">Email:</label>
-        <input className='emailInput'type="email" name="user_email" required/>
+        <input {...register("email", {
+          required: "Email is required",
+          pattern: {
+            value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+            message: "Must enter a valid email address"
+          }
+        })} placeholder= "Email" className='emailInput'type="email" name="user_email" required/>
+        {errors.email?.message}
         <label className="messageLabel1">Dessert selection & quantity:</label>
         <textarea className='messageInput1'name="message" required/>
         <label className="messageLabel2">Special requests:</label>
