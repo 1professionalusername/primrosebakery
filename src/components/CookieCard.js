@@ -1,7 +1,7 @@
 import React from "react";
 // import cupcake from '../images/cupcake.png';
 // import Modal from './Modal';
-import beautifulcookie from '../images/beautifulcookie.jpg';
+import beautifulcookiecompressed from '../images/beautifulcookiecompressed.jpg';
 
 
 
@@ -18,7 +18,7 @@ export default function CookieCard() {
       {/* <div className='modalBtn' onClick={() => setOpenModal(true)}>Modal</div> 
          <Modal open={openModal} onClose={() => setOpenModal(false)} /> */}
       </div>
-      <img src={beautifulcookie} alt="/" className="cardImage" />
+      <img src={beautifulcookiecompressed} alt="/" className="cardImage" />
     </div>
   );
 }
