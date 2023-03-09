@@ -818,13 +818,14 @@ a .triptych_pastries_text{
   height: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 9rem;
-  margin-bottom: 8.7rem;
+  padding-top: 9rem;
+  padding-bottom: 8.7rem;
+  background-color: #f5d4f4;
 }
 @media screen and (max-width: 428px) {
   .gallery-page-wrapper{
   /* margin-top: 9rem; */
-  margin-bottom: 6.3rem;
+  padding-bottom: 6.3rem;
   }
 } 
 .column1 {
@@ -848,12 +849,12 @@ a .triptych_pastries_text{
   background-size: cover;
  }
  .column1 .box3{
-  background-image: url("/public/primrose_doughnuts.jpg");
+  background-image: url("/public/browniechunks.jpg");
   background-position: center; 
   background-size: cover;
  }
  .column1 .box4{
-  background-image: url("/public/primrose_cake.jpg");
+  background-image: url("/public/cookiesprinkles.jpg");
   background-position: center; 
   background-size: cover;
  }
@@ -875,12 +876,12 @@ a .triptych_pastries_text{
  }
  
  .column2 .box2{
-  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-image: url("/public/piewithflower.jpg");
   background-position: center; 
   background-size: cover;
  }
  .column2 .box3{
-  background-image: url("/public/primrose_doughnuts.jpg");
+  background-image: url("/public/primrose_cake_cropped.jpg");
   background-position: center; 
   background-size: cover;
  }
@@ -905,7 +906,7 @@ a .triptych_pastries_text{
   background-size: cover;
  }
  .column3 .box2{
-  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-image: url("images/primrosegalleryrollingpin.jpg");
   background-position: center; 
   background-size: cover;
  }
@@ -916,7 +917,7 @@ a .triptych_pastries_text{
   background-size: cover;
  }
  .column3 .box4{
-  background-image: url("/public/primrose_cake.jpg");
+  background-image: url("/public/primrose_cookie2.jpg");
   background-position: center; 
   background-size: cover;
  }
@@ -1029,8 +1030,10 @@ a .triptych_pastries_text{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 6.2rem;
-  margin-bottom: 6.2rem;
+  padding-top: 6.2rem;
+  padding-bottom: 6.2rem;
+  background-color: #f5d4f4;
+
 }
 @media screen and (max-width: 428px) {
 .about_page_wrapper {
@@ -1039,8 +1042,8 @@ a .triptych_pastries_text{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: 2.3rem;
+  padding-top: 5rem;
+  padding-bottom: 2.3rem;
 }
 }
 .about_text {
@@ -1320,6 +1323,8 @@ img {
 }
 .orderPageWrapper{
   padding-top: 5rem;
+  background-color: #f5d4f4;
+
 
 }
 .orderHere {
@@ -1362,9 +1367,11 @@ img {
   height: 10rem;
   width: auto;
   background-color: white;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: 0.3rem 0.5rem;
   /* cursor: pointer; */
+  background-color: #fde7fc;
+  border-radius: 10px;
 }
 .cardtext {
   font-family: bicyclette, sans-serif;
@@ -1372,15 +1379,17 @@ img {
 }
 .cardcopy {
   margin-bottom: 2rem;
+  line-height: 1.4;
 }
 
-.cardImage {
+/* .cardImage {
   width: 100%;
   max-height: 15rem;
   object-fit: contain;
   padding-top: 1rem;
   margin-left: 0rem;
-}
+  
+} */
 .cardImage {
   justify-content: right;
   height: 7rem;
@@ -1389,13 +1398,15 @@ img {
   background-position: center;
   margin: 0.5rem;
   margin-bottom: 1.5rem;
+  border-radius: 4px;
+  ;
 }
 
 .cardheader {
   display: flex;
   justify-content: left;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-style: bold;
 }
