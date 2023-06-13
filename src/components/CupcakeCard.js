@@ -1,5 +1,5 @@
 import React from "react";
-import beautifulcupcake from '../images/beautifulcupcake.jpg'
+import beautifulcupcakecompressed from '../images/beautifulcupcakecompressed.jpg'
 // import Modal from './Modal';
 
 
@@ -17,7 +17,7 @@ export default function CupcakeCard() {
       {/* <div className='modalBtn' onClick={() => setOpenModal(true)}>Modal</div> 
          <Modal open={openModal} onClose={() => setOpenModal(false)} /> */}
       </div>
-      <img src={beautifulcupcake} alt="/" className="cardImage" />
+      <img src={beautifulcupcakecompressed} alt="/" className="cardImage" />
     </div>
   );
 }
