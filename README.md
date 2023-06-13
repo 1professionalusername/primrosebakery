@@ -55,7 +55,7 @@ CSS preprocessor
 
 This project implements SASS via node-sass, as per the suggestion of Create React App's documentation.
 
-The styles for each component are therefore located in their corresponding <component_name>.scss file.
+<!-- The styles for each component are therefore located in their corresponding <component_name>.scss file. -->
 
 There's also a utility folder under src/styles. The folder contains some common variables, mixins and other stuff that is meant to be reused from other SASS files. You import these styles from another .scss file by doing:
 
@@ -65,10 +65,10 @@ BEM convention
 
 The components try to follow a BEM naming convention (Block Element Modifier). Hence, you can leverage the & (ampersand) operator in SASS to reference the parent component in a concise way.
 
-<a class="Button Button--big Button--orange">
+<!-- <a class="Button Button--big Button--orange">
   <span class="Button__price">$9.99</span>
   <span class="Button__text">Subscribe</span>
-</a>
+</a> -->
 
 you can then write your styles as:
 
@@ -177,3 +177,4 @@ This app was bootstraped based on the template provided by create-react-app
 # primrosebakery
 Bakery Site
 
+Page hosted on Github pages. Domain at Google Domains.
