@@ -1,3 +1,4 @@
+
 React app README.md example
 
 Use this Readme file as a template or starter document for any React application (or to replace the default Readme that ships with Create React App).
@@ -172,3 +173,7 @@ The develop branch deploys to http://my-app-staging.com.
 The master branch deploys to http://my-app.com.
 
 This app was bootstraped based on the template provided by create-react-app
+=======
+# primrosebakery
+Bakery Site
+
